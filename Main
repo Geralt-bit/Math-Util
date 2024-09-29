@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        // Test static methods
+        System.out.println("Static Method Tests:");
+        System.out.println("isPrime(7): " + MathUtil.isPrime(7)); // true
+        System.out.println("gcd(48, 18): " + MathUtil.GCD(48, 18)); // 6
+        System.out.println("lcm(4, 5): " + MathUtil.LCM(4, 5)); // 20
+        System.out.println("fibonacci(5): " + MathUtil.fibonacci(5)); // 5
+        System.out.println("factorial(5): " + MathUtil.factorial(5)); // 120
+
+
+        MathUtil mathUtil = new MathUtil();
+
+        System.out.println("\nNon-Static Method Tests:");
+        System.out.println("isPerfectNumber(28): " + mathUtil.isPerfectNumber(28)); // true
+        System.out.println("sumOfDigits(123): " + mathUtil.sumOfDigits(123)); // 6
+        System.out.println("reverseNumber(123): " + mathUtil.reverseNumber(123)); // 321
+        System.out.println("isArmstrongNumber(153): " + mathUtil.isArmstrongNumber(153)); // true
+        System.out.println("nextPrime(10): " + mathUtil.nextPrime(10)); // 11
+    }
+}
